@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="Theme.TheFuture" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- Primary brand color. -->
+        <item name="android:timePickerStyle">@style/MyTimePickerLight</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="MyTimePickerLight" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:headerBackground">#959595</item>
+<!--        <item name="android:numbersTextColor">#000000</item>-->
+        <item name="android:numbersSelectorColor">#D50000</item>
+<!--        <item name="android:numbersBackgroundColor">#A8A9AA</item>-->
+<!--        <item name="android:background">#FFFFFF</item>-->
+    </style>
+            @style/SpinKitView
+    @style/SpinKitView.Circle
+    @style/SpinKitView.Large
+    @style/SpinKitView.Small
+    @style/SpinKitView.Small.DoubleBounce
+</resources>

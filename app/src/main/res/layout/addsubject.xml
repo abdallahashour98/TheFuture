@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/teacher_name"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+                <EditText
+                    android:id="@+id/edtAddTeacherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/corner"
+                    android:hint="@string/teacher_name"
+                    android:layout_margin="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/checkboxSubjectTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|end"
+                    android:button="@drawable/custom_round_checkbox"
+                    android:buttonTint="@color/purple_500"
+                    android:layout_weight="8"
+                    android:padding="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="StudyYear"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/corner">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:id="@+id/RadioGroupStudyYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radioButtonStudy1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 ث"
+                            android:paddingEnd="5dp"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/blue"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButtonStudy2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2 ث"
+                            android:paddingEnd="5dp"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/blue"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButtonStudy3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 ث"
+                            android:paddingEnd="5dp"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/blue"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonOtherStudy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="أخرى"
+                            android:paddingEnd="5dp"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/blue"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="room"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/corner">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:id="@+id/RadioGroupStudyRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radioButtonRoom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="قاعة 1"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/red"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonRoom2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="قاعة 2"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/red"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonRoom3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="قاعة 3"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/red"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonRoom4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="قاعة 4"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/red"
+                            android:paddingEnd="5dp"
+                            android:textStyle="bold" />
+
+                    </RadioGroup>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="SubjectName"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/corner">
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:id="@+id/RadioGroupSubject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="عربي"
+                            android:paddingStart="5dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="رياضه"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="فيزياء"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="كيمياء"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="فلسفه"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" علم نفس "
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="احياء"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="جولوجيا"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="جعرافيا"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="تاريخ"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="إحصاء"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" تربية وطنية"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="إنجلش"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="فرنساوي"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="الماني"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="إيطالي"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/black"/>
+                        <RadioButton
+                            android:id="@+id/radioButton18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="5dp"
+                            android:text="اسباني"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </RadioGroup>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Time "
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <Button
+                    android:id="@+id/AddTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:text="Add Time "
+                    android:textAllCaps="false"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    />
+
+                <!--        <Spinner-->
+                <!--            android:id="@+id/spnAddHours"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="center_horizontal"-->
+                <!--            android:layout_margin="5dp"-->
+                <!--            android:layout_weight="1"-->
+                <!--            android:background="@drawable/corner"-->
+                <!--            android:entries="@array/hours"-->
+                <!--            android:gravity="center_horizontal"-->
+                <!--            android:padding="15dp" />-->
+
+                <!--        <Spinner-->
+                <!--            android:id="@+id/spnAddMints"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="center_horizontal"-->
+                <!--            android:layout_margin="5dp"-->
+                <!--            android:layout_weight="1"-->
+                <!--            android:background="@drawable/corner"-->
+                <!--            android:entries="@array/mints"-->
+                <!--            android:gravity="center_horizontal"-->
+                <!--            android:padding="15dp" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSaveData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:text="@string/save"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnCancelData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:text="@string/cancel"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

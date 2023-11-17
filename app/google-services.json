@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "923278795697",
+    "project_id": "the-future-ac73a",
+    "storage_bucket": "the-future-ac73a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923278795697:android:0ddc3311edebabe9ce5390",
+        "android_client_info": {
+          "package_name": "com.example.thefuture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923278795697-avpne82md3g1qiau6r690jm3p3uh8t01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8wR5UYeduwxGsQ69f9_6NgFWqm77OIzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923278795697-avpne82md3g1qiau6r690jm3p3uh8t01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

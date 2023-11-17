@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">the future</string>
+    <string name="ramadan_month">شهر رمضان </string>
+    <string name="sat">السبت</string>
+    <string name="sun">الاحد</string>
+    <string name="mon">الاثنين</string>
+    <string name="tues">الثلاثاء</string>
+    <string name="wed">الاربعاء</string>
+    <string name="thu">الخميس</string>
+    <string name="fri">الجمعة</string>
+    <string name="room_1">قاعة 1</string>
+    <string name="room_2">قاعة 2</string>
+    <string name="room_3">قاعة 3</string>
+    <string name="room_4">قاعة 4</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">الغاء</string>
+    <string name="Are">هل انت متأكد؟</string>
+    <string name="edit">تعديل او مسح !</string>
+    <string name="edit2">تعديل او الغاء الملاحظه !</string>
+
+    <string name="edit1">تعديل</string>
+    <string name="delete">مسح</string>
+    <string name="deleteDone">تم الحذف</string>
+    <string name="please">من فضلك تأكد من ادهال اسم المعلم</string>
+    <string name="Please">من فضلك تأكد من اختيار السنة الدراسية</string>
+    <string name="Please2">من فضلك تأكد من اختيار القاعة الطلوبة</string>
+    <string name="Please3">من فضلك تأكد من اختيار اسم المادة</string>
+    <string name="Please4">من فضلك تأكد من اختيار وقت الحصه بالدقيقة</string>
+    <string name="Please5">من فضلك تأكد من اختيار وقت الحصه بالساعة</string>
+    <string name="pleaseEnterTeacherName">من فضلك تأكد من ادهال اسم المعلم</string>
+    <string name="pleaseEnterTeacherNam">من فضلك تأكد من اختيار السنة الدراسية</string>
+    <string name="Pleaseselectroom">من فضلك تأكد من اختيار القاعة الطلوبة</string>
+    <string name="SubjectName">من فضلك تأكد من اختيار اسم المادة</string>
+    <string name="Mints">من فضلك تأكد من اختيار وقت الحصه بالدقيقة</string>
+    <string name="Hours">من فضلك تأكد من اختيار وقت الحصه بالساعة</string>
+    <string name="teacher_name">اسم المعلم: </string>
+    <string name="add_nots">إضافة ملاحظه</string>
+    <string name="Notes">من فضلك ادخل الملاحظه قبل الحفظ </string>
+    <string name="saved">تم حفظ الملاحظه</string>
+    <string name="Cancel">إالغاء</string>
+
+
+</resources>

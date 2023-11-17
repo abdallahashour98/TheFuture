@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">the future</string>
+    <string name="ramadan_month">ramadan Month</string>
+    <string name="sat">Saturday</string>
+    <string name="sun">Sunday</string>
+    <string name="mon">Monday</string>
+    <string name="tues">Tuesday</string>
+    <string name="wed">Wednesday</string>
+    <string name="thu">Thursday</string>
+    <string name="fri">Friday</string>
+    <string name="room_1">room 1</string>
+    <string name="room_2">room 2</string>
+    <string name="room_3">room 3</string>
+    <string name="room_4">room 4</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <string name="Are">Are you sure?</string>
+    <string name="edit">edit subject or delete!</string>
+    <string name="edit2">edit notes or cancel!</string>
+    <string name="edit1">edit</string>
+    <string name="delete">delete</string>
+    <string name="deleteDone">delete Done</string>
+    <string name="please">please update TeacherName</string>
+    <string name="Please">Please update study year</string>
+    <string name="Please2">Please update room</string>
+    <string name="Please3">Please update SubjectName</string>
+    <string name="Please4">Please update Mints</string>
+    <string name="Please5">Please update  Hours</string>
+    <string name="pleaseEnterTeacherName">pleaseEnterTeacherName</string>
+    <string name="pleaseEnterTeacherNam">Please select study year</string>
+    <string name="Pleaseselectroom">Please select room</string>
+    <string name="SubjectName">Please select SubjectName</string>
+    <string name="Mints">Please select Mints</string>
+    <string name="Hours">Please select  Hours</string>
+    <string name="teacher_name">Teacher Name</string>
+    <string name="add_nots">add nots</string>
+    <string name="saved">notes saved</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Notes">please Enter Notes</string>
+
+
+</resources>
